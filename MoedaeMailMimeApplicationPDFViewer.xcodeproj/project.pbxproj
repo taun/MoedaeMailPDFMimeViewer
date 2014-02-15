@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C55081B618A179DB00F4D77A /* MoedaeMailPluginsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55081B518A179DB00F4D77A /* MoedaeMailPluginsBase.framework */; };
+		C50062C418AFE43F00371E5D /* MMPMApplicationPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = C50062C318AFE43F00371E5D /* MMPMApplicationPDF.m */; };
+		C50062C818AFE53800371E5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50062C718AFE53800371E5D /* QuartzCore.framework */; };
+		C50062CA18AFE55C00371E5D /* MoedaeMailPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50062C918AFE55C00371E5D /* MoedaeMailPlugins.framework */; };
+		C50062CC18AFE58600371E5D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50062CB18AFE58600371E5D /* Quartz.framework */; };
+		C50062D118B002EC00371E5D /* MMPPDFViewWithIntrinsic.m in Sources */ = {isa = PBXBuildFile; fileRef = C50062D018B002EC00371E5D /* MMPPDFViewWithIntrinsic.m */; };
 		C56585AB18A14C7E0074801A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56585AA18A14C7E0074801A /* Cocoa.framework */; };
 		C56585B518A14C7E0074801A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C56585B318A14C7E0074801A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C50062C218AFE43F00371E5D /* MMPMApplicationPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPMApplicationPDF.h; sourceTree = "<group>"; };
+		C50062C318AFE43F00371E5D /* MMPMApplicationPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPMApplicationPDF.m; sourceTree = "<group>"; };
+		C50062C718AFE53800371E5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C50062C918AFE55C00371E5D /* MoedaeMailPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoedaeMailPlugins.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MailBoxesWS-flefgebzxrtslzetgxarmnthbbgu/Build/Products/Debug/MoedaeMailPlugins.framework"; sourceTree = "<group>"; };
+		C50062CB18AFE58600371E5D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		C50062CF18B002EC00371E5D /* MMPPDFViewWithIntrinsic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPPDFViewWithIntrinsic.h; sourceTree = "<group>"; };
+		C50062D018B002EC00371E5D /* MMPPDFViewWithIntrinsic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPPDFViewWithIntrinsic.m; sourceTree = "<group>"; };
 		C55081B518A179DB00F4D77A /* MoedaeMailPluginsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoedaeMailPluginsBase.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MailBoxesWS-flefgebzxrtslzetgxarmnthbbgu/Build/Products/Debug/MoedaeMailPluginsBase.framework"; sourceTree = "<group>"; };
 		C56585A718A14C7E0074801A /* MoedaeMailMimeApplicationPDFViewer.mmmimeviewerplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoedaeMailMimeApplicationPDFViewer.mmmimeviewerplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56585AA18A14C7E0074801A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -29,8 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50062CC18AFE58600371E5D /* Quartz.framework in Frameworks */,
+				C50062C818AFE53800371E5D /* QuartzCore.framework in Frameworks */,
 				C56585AB18A14C7E0074801A /* Cocoa.framework in Frameworks */,
-				C55081B618A179DB00F4D77A /* MoedaeMailPluginsBase.framework in Frameworks */,
+				C50062CA18AFE55C00371E5D /* MoedaeMailPlugins.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +70,9 @@
 		C56585A918A14C7E0074801A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C50062CB18AFE58600371E5D /* Quartz.framework */,
+				C50062C918AFE55C00371E5D /* MoedaeMailPlugins.framework */,
+				C50062C718AFE53800371E5D /* QuartzCore.framework */,
 				C55081B518A179DB00F4D77A /* MoedaeMailPluginsBase.framework */,
 				C56585AA18A14C7E0074801A /* Cocoa.framework */,
 				C56585AC18A14C7E0074801A /* Other Frameworks */,
@@ -78,6 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				C56585B118A14C7E0074801A /* Supporting Files */,
+				C50062C218AFE43F00371E5D /* MMPMApplicationPDF.h */,
+				C50062C318AFE43F00371E5D /* MMPMApplicationPDF.m */,
+				C50062CF18B002EC00371E5D /* MMPPDFViewWithIntrinsic.h */,
+				C50062D018B002EC00371E5D /* MMPPDFViewWithIntrinsic.m */,
 			);
 			name = MoedaeMailMimeApplicationPDFViewer;
 			path = MoedaeMailPDFMimeViewer;
@@ -155,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50062D118B002EC00371E5D /* MMPPDFViewWithIntrinsic.m in Sources */,
+				C50062C418AFE43F00371E5D /* MMPMApplicationPDF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
