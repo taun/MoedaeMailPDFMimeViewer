@@ -29,7 +29,7 @@
     [nodeView setAutoScales: YES];
     [nodeView setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable];
     [nodeView setFrame: nodeRect];
-    [nodeView setDisplayMode: kPDFDisplaySinglePageContinuous];
+    [nodeView setDisplayMode: kPDFDisplaySinglePage];
     [nodeView setDisplayBox: kPDFDisplayBoxArtBox];
 
     NSScrollView* scroller = [[((NSView*)nodeView) subviews] objectAtIndex: 0]; //setAutohidesScrollers

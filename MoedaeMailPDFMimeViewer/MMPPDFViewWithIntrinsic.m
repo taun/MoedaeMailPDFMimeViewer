@@ -27,8 +27,9 @@
 }
 
 -(NSSize) intrinsicContentSize {
+    CGFloat docHeight = self.documentView.bounds.size.height;
     CGFloat height = self.frame.size.height;
-    NSSize newSize = NSMakeSize(NSViewNoInstrinsicMetric, height);
+    NSSize newSize = NSMakeSize(NSViewNoInstrinsicMetric, fmaxf(height, docHeight+100.0));
     return newSize;
 }
 
