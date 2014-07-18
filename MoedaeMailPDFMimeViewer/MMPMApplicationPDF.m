@@ -16,8 +16,16 @@
 }
 
 -(void) loadData {
-    PDFDocument* document = [[PDFDocument alloc] initWithData: self.node.decoded];
-    [(PDFView*)self.mimeView setDocument: document];
+    NSData* nodeData = self.node.decoded;
+
+    if (nodeData) {
+        PDFDocument* document = [[PDFDocument alloc] initWithData: self.node.decoded];
+        [(PDFView*)self.mimeView setDocument: document];
+    } else {
+#pragma message "ToDo: use NSURL to load a default PDF document as a placeholder if nodeData == nil"
+        PDFDocument* document = [[PDFDocument alloc] initWithData: nil];
+        [(PDFView*)self.mimeView setDocument: document];
+    }
 //    [((MMPMApplicationPDFMimeView*)self.mimeView).thumbnailView setPDFView: ((MMPMApplicationPDFMimeView*)self.mimeView).pdfView];
 }
 
