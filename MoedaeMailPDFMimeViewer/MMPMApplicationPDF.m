@@ -23,7 +23,7 @@
         [(PDFView*)self.mimeView setDocument: document];
     } else {
 #pragma message "ToDo: use NSURL to load a default PDF document as a placeholder if nodeData == nil"
-        PDFDocument* document = [[PDFDocument alloc] initWithData: nil];
+        PDFDocument* document = [[PDFDocument alloc] initWithData: [NSData data]];
         [(PDFView*)self.mimeView setDocument: document];
     }
 //    [((MMPMApplicationPDFMimeView*)self.mimeView).thumbnailView setPDFView: ((MMPMApplicationPDFMimeView*)self.mimeView).pdfView];
